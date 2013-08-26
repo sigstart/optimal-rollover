@@ -16,8 +16,6 @@ start_date.step(end_date, step=1) do |date|
 		validity_total += (bundle_end - bundle_start).to_i
 		bundle_start += recur
 	end
-	# optimal_dates = optimal_dates + [date]
-	# validity_test = validity_test + [validity_total]
 	if validity_total > max_validity
 		max_validity = validity_total
 		optimal_dates = [date]
